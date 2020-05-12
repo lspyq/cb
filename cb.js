@@ -1,3 +1,4 @@
+function go() {
 function changeVideo(node) {
     if (window.V.movieInfo[1] == node.dataset.id) {
         return
@@ -134,4 +135,4 @@ $("body")[0].innerHTML += "<br>视频数据解析完成..."
 
     });
 })
-
+}
