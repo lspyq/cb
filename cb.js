@@ -61,7 +61,7 @@ function getScript(url, callfun, tryNum) {
 function toPlay() {
     $("body")[0].innerHTML += "<br>即将播放..."
     // console.log(V);
-    console.log([V, V, V, V])
+    //console.log([V, V, V, V])
     // var src = V.movieDetails[parseInt(V.movieInfo[1]) - 1].split("$")[1]
     var src = V.videoUrl
     var jishu = V.movieDetails[parseInt(V.movieInfo[1]) - 1].split("$")[0]
