@@ -59,6 +59,7 @@ function getScript(url, callfun, tryNum) {
 }
 
 function toPlay() {
+    $("body")[0].innerHTML += "<br>即将播放..."
     // console.log(V);
     console.log([V, V, V, V])
     // var src = V.movieDetails[parseInt(V.movieInfo[1]) - 1].split("$")[1]
@@ -125,7 +126,7 @@ onLoadOver('jQuery', function (err) {
     }, 5)
     $("body")[0].innerHTML += "<br>正在解析视频数据..."
     $.post("https://jx.688ing.com/parse/op/play", { movieUrl: window.location.href.split('?url=')[1], apiId: 0 }, function (V) {
-        $("body")[0].innerHTML += "<br>即将播放..."
+$("body")[0].innerHTML += "<br>视频数据解析完成..."
         window.V = V
         if (window.DPlayer) {
             toPlay()
@@ -133,3 +134,4 @@ onLoadOver('jQuery', function (err) {
 
     });
 })
+
